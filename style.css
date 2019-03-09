@@ -1,0 +1,198 @@
+body {
+    font-family: 'ING ME', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: rgb(51, 51, 51)
+}
+
+html {
+    padding-bottom: 30px;
+
+}
+a { 
+    display: inline; 
+    text-decoration: none;
+    color: rgb(255, 98, 0);
+}
+
+.content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+pre {
+    display: inline;
+    margin: 0;
+}
+
+.file pre {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.untracked, .changes-not-staged, .red {
+    color: red;
+}
+.changes-staged, .green {
+    color: lime;
+}
+.untracked::before, .changes-not-staged::before, .changes-staged::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+}
+.message {
+    color: yellow;
+}
+.comment {
+    color: #00ffff
+}
+
+p {
+    clear: both;
+}
+
+p.plot {
+    font-size: 30px;
+}
+
+p.poem {
+    font-size: 18px;
+}
+
+.team-work {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border-top: 2px dashed rgba(82, 81, 153, .75);
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.team-member {
+    width: 47%;
+}
+
+.git {
+    font-family: 'Nimbus', Monaco, monospace;
+    border: 1px solid rgb(64, 64, 64);
+    background-color: rgb(64, 64, 64);
+    color: gainsboro;
+    border-radius: 5px;
+    padding: 10px 5px;
+
+    clear: both;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.with-response {
+    border-radius: 0 5px 5px 5px;
+}
+
+.response {
+    border: 1px solid rgb(64, 64, 64);
+    border-radius: 5px 20px 0 0;
+    background-color: rgb(230, 230, 230);
+    border-bottom: 0;
+    font-size: 14px;
+    width: 80px;
+    margin-top: 10px;
+    padding: 1px 6px 1px 6px;
+}
+
+.team-member .git {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.img {
+    width: 70%;
+    padding-right: 10px;
+}
+
+img.member {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.full-piece {
+    border-top: 2px dashed rgba(82, 81, 153, .75);
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.piece {
+    border-top: 2px dashed rgba(82, 81, 153, .75);
+    margin-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    /*flex-flow: column-reverse;*/
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.piece p {
+    width: 27%;
+    padding: 0;
+    margin: 0;
+}
+.piece .howto {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.command {
+    font-family: 'Nimbus', Monaco, monospace;
+    background-color: rgba(255, 98, 0, .1);
+    border: 1px solid rgb(255, 98, 0);
+    border-radius: 4px;    
+    font-size: 16px;    
+    padding: 1px 5px;    
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1440px) {
+    .content {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .piece {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    .piece p {
+        width: auto;
+    }
+    .git {
+        width: auto;
+        margin-top: 10px;
+    }
+}
